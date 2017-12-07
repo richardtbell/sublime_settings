@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+import React from 'react'
+import { configure, shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+
+import { ${1} } from './${1}'
+
+configure({adapter: new Adapter()})
+
+describe('${1}', () => {
+    it('${2}', () => {
+        ${0}
+    })
+})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>test</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>New Test</description>
+</snippet>
